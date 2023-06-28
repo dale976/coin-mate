@@ -1,8 +1,9 @@
-package com.example.coinmate;
+package com.example.coinmate.activities;
 
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.example.coinmate.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
