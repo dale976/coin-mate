@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3F51B5"
+    android:background="#673AB7"
     tools:context=".activities.LoginActivity">
 
     <TextView
@@ -68,16 +68,16 @@
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editTextTextPersonPassword"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
+        android:background="@drawable/edit_background"
         android:ems="10"
         android:inputType="textPassword"
         android:padding="8sp"
         android:text="Password"
         android:textColor="#B2FFFFFF"
-        android:background="@drawable/edit_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
         app:layout_constraintHorizontal_bias="0.0"
@@ -93,14 +93,14 @@
         android:textColor="#B2FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonPassword"
         app:layout_constraintHorizontal_bias="0.541"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonPassword"
         app:layout_constraintVertical_bias="0.055" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/buttonLogIn"
         style="@android:style/Widget.Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -108,9 +108,9 @@
         android:text="Login"
         app:iconTint="#673AB7"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonPassword"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonPassword"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:layout_constraintVertical_bias="0.294" />
 
@@ -124,7 +124,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogIn"
         app:layout_constraintVertical_bias="0.375" />
 
     <TextView
