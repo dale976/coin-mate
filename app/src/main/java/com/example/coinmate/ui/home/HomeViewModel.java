@@ -4,38 +4,27 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.coinmate.ui.common.listItem.ListItem;
+import com.example.coinmate.Domain.Wallet;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class HomeViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
-    private final MutableLiveData<ArrayList> mItems;
+    private final ArrayList<Wallet> mWallets;
 
     public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment where is the list???");
+        mText.setValue("Today's top coins");
 
-        mItems = new MutableLiveData<ArrayList>();
-        mItems.setValue(generateListItems());
-
-    }
-
-    private ArrayList<ListItem> generateListItems() {
-        ArrayList items = new ArrayList<ListItem>();
+        mWallets = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
-            ListItem item = new ListItem();
-            item.name = "Some Coin Name " + i;
-            item.id = i;
-            items.add(item);
+            mWallets.add(new Wallet("coin name " + i));
         }
-        return items;
     }
 
     public LiveData<String> getText() {
         return mText;
     }
-    public LiveData<ArrayList> getListItems() { return mItems; }
+    public ArrayList<Wallet> getItems() { return mWallets; }
 }
