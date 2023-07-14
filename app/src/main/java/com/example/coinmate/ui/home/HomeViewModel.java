@@ -39,7 +39,7 @@ public class HomeViewModel extends ViewModel {
     }
     private void loadComics() {
         ArrayList<Comic> newComics = new ArrayList<>();
-        newComics.add(new Comic("1234", "some title", "foobar", "somepath"));
+//        newComics.add(new Comic("1234", "some title", "foobar", "somepath"));
 //        mComics.setValue(newComics);
     }
 

@@ -1,5 +1,7 @@
 package com.example.coinmate.Domain;
 
+import android.graphics.Bitmap;
+
 public class Comic {
     private String id;
     private String title;
@@ -41,7 +43,7 @@ public class Comic {
         return img;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setImg(Bitmap img) {
+        this.img = img.toString();
     }
 }

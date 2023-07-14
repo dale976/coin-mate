@@ -16,6 +16,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Api {
@@ -82,7 +83,7 @@ public class Api {
                     if(null != response.toString()) {
                         try {
                             listener.getResult(response);
-                        } catch (JSONException e) {
+                        } catch (JSONException | IOException e) {
                             throw new RuntimeException(e);
                         }
                     }
